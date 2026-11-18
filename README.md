@@ -5,7 +5,7 @@ Dione Karuru (263115) and Agnes Chuchu (170235), MSc Artificial Intelligence. Le
 
 A tabular Q-learning agent decides each morning which of five rural growth points one mobile bank unit should serve. The simulator is a custom Gymnasium environment; no RL library is used.
 
-- **Google Colab (run it online):** https://colab.research.google.com/drive/1OByCudojqhW2gRnf9nxp3q0HsL_ABt-W
+- **Google Colab (run it online):** https://colab.research.google.com/drive/1hDAxpME9D20-6tB0SuGNj9SPds9xSxrX?usp=sharing
 - **Dataset used for calibration:** [Wisabi Bank Dataset on Kaggle](https://www.kaggle.com/datasets/obinnaiheanachor/wisabi-bank-dataset) (CC0)
 - **Presentation:** `RL_Mobile_Bank_Scheduling_Assignment_B_Presentation_updated.pptx`
 
