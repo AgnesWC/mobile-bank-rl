@@ -1,6 +1,6 @@
 # Reinforcement Learning for Daily Site Scheduling of a Rural Mobile Bank Unit
 
-NMAI511 Reinforcement Learning, Assignment B (continuation of Assignment A)
+NMAI511 Reinforcement Learning, Assignment B 
 Dione Karuru (263115) and Agnes Chuchu (170235), MSc Artificial Intelligence. Lecturer: S. H. Muchinenyika
 
 A tabular Q-learning agent decides each morning which of five rural growth points one mobile bank unit should serve. The simulator is a custom Gymnasium environment; no RL library is used.
@@ -9,9 +9,9 @@ A tabular Q-learning agent decides each morning which of five rural growth point
 - **Dataset used for calibration:** [Wisabi Bank Dataset on Kaggle](https://www.kaggle.com/datasets/obinnaiheanachor/wisabi-bank-dataset) (CC0)
 - **Presentation:** `RL_Mobile_Bank_Scheduling_Assignment_B_Presentation_updated.pptx`
 
-## Where each part of the brief is answered
+## Addressing Assignment B
 
-| Part of the brief | Where |
+| Assignment requirements | Where |
 | --- | --- |
 | Method of choosing the best policy (lookup table, 9,720 states x 5 sites) | Notebook Section 5; `mobilebank/agents.py` (`QLearning`, `greedy`) |
 | Justification of the RL algorithm (Q-learning, not DQN or PPO) | Notebook Section 3; slide 5 |
@@ -46,7 +46,7 @@ python demo.py                      # trains for 4,000 simulated years first (1 
 python analyze.py                   # prints the results from results/*.json
 ```
 
-To reproduce the study from scratch:
+Reproducing the study:
 
 ```bash
 python experiments.py --part grid     # validation grid for the step-size floor and epsilon decay
@@ -59,7 +59,7 @@ python analyze.py
 
 ## Data
 
-No public dataset records visits to a rural mobile bank. The Wisabi Bank Dataset (2.1 million ATM transactions, 50 locations) sets the spread of daily demand (variance 3.2 times the mean) and 4.14 minutes per transaction. Only these summary numbers are kept, in `data/calibration.json`. The raw files are not copied here (CC0, large); download them from Kaggle and run `python calibrate.py <folder>` to reproduce the file. Site demand levels, seasonal peaks, account uptake and incident risk are labelled assumptions in `mobilebank/config.py`.
+The Wisabi Bank Dataset (2.1 million ATM transactions, 50 locations) sets the spread of daily demand (variance 3.2 times the mean) and 4.14 minutes per transaction. Only these summary numbers are kept, in `data/calibration.json`.Site demand levels, seasonal peaks, account uptake and incident risk are labelled assumptions in `mobilebank/config.py`.
 
 ## Main results (20 districts, 20 unseen test years each)
 
